@@ -1,6 +1,6 @@
 // const  sum  = require('../dom');
 
-const { getByLabelText, screen } = require('@testing-library/dom');
+const { getByLabelText } = require('@testing-library/dom');
 
 function domExample() {
   // return dom => here is div 
@@ -13,7 +13,7 @@ function domExample() {
   return div;
 }
 
-test('check input id equal to example.', () => {
+test('Check input id equal to example.', () => {
   // execute domExample function to obtain div.
   const container = domExample();
   // use getByLabelText method to query text: Example.
